@@ -1,0 +1,31 @@
+Taxi_bot:
+  - name: Taxi_bot
+    radius: 0.05  # Robot radius
+    height: 0.1  # Robot height
+    location: Spawn  # Initial location
+    pose:  # Initial pose, if not specified will sample
+      position:
+        x: 0
+        y: 0
+      rotation_eul:
+        yaw: 0
+    initial_battery_level: 50.0
+    # Dynamics limits
+    max_linear_velocity: 1
+    max_angular_velocity: 1
+    max_linear_acceleration: 1
+    max_angular_acceleration: 1
+    partial_observability: False  # If True, robot starts with no detected objects
+    # Options to control the execution of actions
+    action_execution_options:
+      navigate:
+        delay: 0.1
+        success_probability: 0.9
+        rng_seed: 42
+        battery_usage: 1.0
+      pick:
+        delay: 1.0
+        battery_usage: 5.0
+      place:
+        success_probability: 0.75
+        battery_usage: 5.0

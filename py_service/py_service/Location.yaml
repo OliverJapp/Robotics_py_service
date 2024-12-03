@@ -1,0 +1,15 @@
+shelf:
+  footprint:
+    type: box
+    dims: [1.0, 1.0]
+    height: 0.5
+  nav_poses:
+    - [1.05, 2.0, 0.0]      
+    - [1.0, 1.05, 1.57]     
+    - [1.0, 2.0, -1.57]     
+  locations:
+    - name: "Shelf"
+      footprint:
+        type: parent
+        padding: 0.1
+  color: [0, 0, 0]

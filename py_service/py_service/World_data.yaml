@@ -1,0 +1,6 @@
+
+# Metadata
+metadata:
+   locations: py_service/py_service/Locations.yaml
+   objects: py_service/py_service/Objects.yaml
+   robots: py_service/py_service/Robot.yaml

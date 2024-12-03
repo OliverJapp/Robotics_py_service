@@ -1,0 +1,5 @@
+banana:                   # The category name is "apple"
+  footprint:
+    type: circle         # Circular footprint
+    radius: 0.06         # 6 cm radius
+  color: [1, 0, 0]       # Red

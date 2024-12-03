@@ -1,0 +1,9 @@
+source pyrobosim/setup/source_pyrobosim.bash
+source ./install/setup.bash
+colcon build
+ros2 run py_service client banana,cow,frame 1,2,3
+ros2 run py_service delivery banana 1
+ros2 run py_service taxi
+ros2 run py_service hive
+ros2 run py_service claw
+ros2 run py_service World

@@ -1,0 +1,6 @@
+
+# Metadata
+metadata:
+   locations: /home/slane/pyrobosim/World/Location.yaml
+   objects: /home/slane/pyrobosim/World/Object.yaml
+   robots: /home/slane/pyrobosim/World/Robots.yaml

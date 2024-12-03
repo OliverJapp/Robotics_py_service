@@ -1,0 +1,27 @@
+shelf:                       # Category name is "table"
+  footprint:                 # The overall location footprint is this box
+    type: box
+    dims: [1, 1]
+    height: 0.5      
+  locations:                 # List of locations
+    - name: "Shelf"       # The location name will be "<loc_name>_tabletop"
+      footprint:
+        type: parent         # "parent" footprint means we inherit parent's box geometry
+        padding: 0.1         # 10 cm padding relative to the parent geometry
+
+Nav_point:                    # Category name is "table"
+  footprint:                 # The overall location footprint is this box
+    type: box
+    dims: [0.3, 0.3]
+    height: 0.5  
+  nav_poses:
+    - [0.3, 0, 1.57]
+    - [0, 0.3, 1.57]
+    - [-0.3, 0, 1.57]
+    - [0, 0.3, 1.57] 
+  locations:                 # List of locations
+    - name: "Nav"       # The location name will be "<loc_name>_tabletop"
+      footprint:
+        type: parent         # "parent" footprint means we inherit parent's box geometry
+        padding: 0.1 
+  color: [0.2, 0, 0]         # Dark red
